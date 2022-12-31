@@ -2,7 +2,7 @@
 Пример обьявление переменной const и let и отличие между ними.
 Диалоговое окно prompt
 Узнать тип данных typeof
-Пример Number.parseInt (обрезать целое число)
+Пример Number.parseInt (обрезать целое число) 50px /// 50
 Пример Number.parseFloat (обрезать число с точкой)
 После точки 3 числа Number(salary.toFixed(3
 Перевести в число Конструктор Number(quantity)
