@@ -1,48 +1,64 @@
-
-// Обьявление переменной const и let и отличие между ними.
+/*
+* Обьявление переменной const и let и отличие между ними.
+*/
 let an = 2
 an = 20
 const bn = 10
 const vn = true
 console.log(typeof vn)
 
-// Диалоговое окно prompt и как узнать тип данных typeof /// number, string, true, false
+/*
+* Диалоговое окно prompt и как узнать тип данных typeof /// number, string, true, false
+*/
 // let avn = prompt('Ви бажаєте підписатися?')
 // avn = Number(avn)
 // console.log(typeof avn)
-
-// Number.parseInt (обрезать целое число) /// 50
+/*
+* Number.parseInt (обрезать целое число) /// 50
+*/
 let elementWidth = '50px'
 elementWidth = Number.parseInt(elementWidth)
 console.log('elementWidth:', elementWidth)
 
-// Number.parseFloat (обрезать число с точкой) /// 200.74
+/*
+* Number.parseFloat (обрезать число с точкой) /// 200.74
+*/
 let elementWidthp = '200.74px'
 elementWidthp = Number.parseFloat(elementWidthp)
 console.log('elementWidth:', elementWidthp)
 
-// После точки 3 числа Number(salary.toFixed(3) /// 1300.678
+/*
+* После точки 3 числа Number(salary.toFixed(3) /// 1300.678
+*/
 // let salary = 1300.67890
 // salary = Number(salary.toFixed(3))
 // console.log(salary)
 
-// Перевести в число Конструктор Number(quantity) /// 12 число
+/*
+* Перевести в число Конструктор Number(quantity) /// 12 число
+*/
 let quantity = '12'
 console.log(Number(quantity)) /// 12 число
 
-// Возвести число в степень Math.pow()
+/*
+* Возвести число в степень Math.pow()
+*/
 // const base = 2
 // const power = 5
 // const result = Math.pow(base, power)
 // console.log(base ** power)
 
-// Сгенерировать случайное число формула Math.round(Math.random() * (max - min) + min)
+/*
+* Сгенерировать случайное число формула Math.round(Math.random() * (max - min) + min)
+*/
 // const max = 10
 // const min = 0
 // const result = Math.round(Math.random() * (max - min) + min)
 // console.log(result)
 
-// Задача 1 Напиши скрипт который просит пользователя ввести число и степень возводит число в эту степень и выводит результат в консоль
+/*
+* Задача 1 Напиши скрипт который просит пользователя ввести число и степень возводит число в эту степень и выводит результат в консоль
+*/
 // Шаг 1 Попросить ввести число и сохранить в переменную
 // let base = prompt('Давай число')
 // base = Number(base)
@@ -57,7 +73,9 @@ console.log(Number(quantity)) /// 12 число
 // const result = base ** power
 // console.log(result)
 
-// Задача 2 Генерим псевдослучайные цвета body
+/*
+* Задача 2 Генерим псевдослучайные цвета body
+*/
 const colors = ['tomato', 'while', 'pink', 'orange']
 const max = colors.length - 1
 const min = 0
@@ -68,23 +86,29 @@ console.log(color)
 
 document.body.style.background = color
 
-// Узнать длину строки .length
+/*
+* Узнать длину строки .length
+*/
 // const masage = 'В этой строке 26 символов.'
 // console.log(masage.length)
 
-// Конкатенация строк без пробелов (сщивание строк)
+/*
+* Конкатенация строк без пробелов (сщивание строк)
+*/
 // const firstName = 'Chelsy'
 // const lastName = 'Emerald'
 // const fullName = firstName + lastName
 // console.log(fullName)
-
-// Конкатенация строк без пробелов
+/*
+* Конкатенация строк без пробелов
+*/
 // const firstName = 'Chelsy'
 // const lastName = 'Emerald'
 // const fullName = firstName + ' ' lastName
 // console.log(fullName)
-
-// Конкатенация строк без пробелов
+/*
+* Конкатенация строк без пробелов
+*/
 // Пример Переменная ${firstName}
 const firstName = 'Chelsy'
 const lastName = 'Emerald'
@@ -94,16 +118,22 @@ const room = 716
 const welcomeMsd = `Гость ${firstName} ${lastName} поселяется в ${type} номер ${room} `
 console.log(welcomeMsd)
 
-// Нормализаия пользовательского ввода .toLowerCase() Перевести в нижний регистр
+/*
+* Нормализаия пользовательского ввода .toLowerCase() Перевести в нижний регистр
+*/
 // let brand = 'SuMsUnG'
 // brand = brand.toLowerCase()
 // console.log(brand)
 
-// Обратится к любому символу строки console.log(переменная[0])
+/*
+* Обратится к любому символу строки console.log(переменная[0])
+*/
 // let brand = 'Sumsbng'
 // console.log(brand[0])
 
-// Обрезать в строке любую букву
+/*
+* Обрезать в строке любую букву
+*/
 // let brand = 'SuMsbng'
 // console.log(brand.slice(1).toLowerCase())
 
@@ -111,7 +141,9 @@ console.log(welcomeMsd)
 // brand = brand[0] + brand.slice(1).toLowerCase()
 // console.log(brand)
 
-// Поиск в строке нужного слова с методом includes()
+/*
+* Поиск в строке нужного слова с методом includes()
+*/
 // const word1 = 'cпам';
 // const word2 = 'pаспродажа';
 // Этот метод не работает с переменнами
@@ -132,8 +164,9 @@ console.log(welcomeMsd)
 // console.log(string3.includes('спам'));
 // console.log(string3.includes('распродажа'));
 
-// Операторы сравнения > < >= <= операторы возвращают буль true или false
-
+/*
+* Операторы сравнения > < >= <= операторы возвращают буль true или false
+*/
 // Операторы сравнений и возвращение условий
 // console.log(5 > 10)
 // console.log(15 > 10)
@@ -142,22 +175,30 @@ console.log(welcomeMsd)
 // console.log(15 < 30)
 // console.log(15 < 3)
 
-// Приведение (преобразование) типов к числу
+/*
+* Приведение (преобразование) типов к числу
+*/
 // Операт слева и оперант с права обязательно приводиться к числу
 // console.log(true > 5)
 // console.log(Number(true))
 
-// Оператор равенства
+/*
+* Оператор равенства
+*/
 // const isEqual = 1 === '1'
 // console.log(isEqual)
 // каждое сравнение равно только самому себе 1 равно 1 тру равно тру и так далее
 // это число а это строка они не равны поэтому фолс
 
-// Оператор Не равно
+/*
+* Оператор Не равно
+*/
 const isEqual = 1 !== '1'
 console.log(isEqual)
 
-// Приведение к булю используем конструктор Boolean()
+/*
+* Приведение к булю используем конструктор Boolean()
+*/
 // Есть преобразование булевое это когда любое значение приводится к true или к false
 console.log(Boolean(5))
 console.log(Boolean('qwe'))
@@ -170,7 +211,9 @@ console.log(Boolean(''))
 console.log(Boolean(false))
 // Абсолютно все остальное приводится к true. Обьекты функции массивы приводится к true в булевом преобразовании
 
-// Логическое И &&
+/*
+* Логическое И &&
+*/
 //  - Проверяет все значения на true или false
 // - Запинается на лжи (false)
 //  - Возвращает то, на чем запнулось или последний оперант
@@ -181,7 +224,9 @@ console.log(5 && 6 && 7 && 'hello')
 // Ищет до первого false и запинаеться на нем
 console.log(false && 'hello')
 
-// Логическое ИЛИ (оператор ||)
+/*
+* Логическое ИЛИ (оператор ||)
+*/
 // - Запинается на правде true
 // - Возвращает то, на чем заптнулось или послений оперант
 //  То есть или это или это или это
@@ -190,13 +235,17 @@ console.log(false || 7 || 8 || 10)
 console.log(false || 0 || 8 || 10)
 console.log(false || 0 || null || 10)
 
-// Лоническое НЕ (операто !)
+/*
+* Лоническое НЕ (операто !)
+*/
 // Делает инверсию правда > лож и лож > правда
 console.log(!false)
 console.log(!true)
 console.log(!0)
 
-// Задача 3 Напииши скрпит который проверяет вхождение числа в отрезок обозначенный х1 и х2 ${переменная}
+/*
+* Задача 3 Напииши скрпит который проверяет вхождение числа в отрезок обозначенный х1 и х2 ${переменная}
+*/
 // - До х1 10 начало отрезка
 // - После х2 30 конец отрезка
 // - От х1 до х2
@@ -215,7 +264,9 @@ console.log(`Число ${number} попадает в отрезок от ${x1} 
 
 console.log(`Число ${number} попадает в отрезок до ${x1} или после ${x2}? `, number < x1 || number > x2)
 
-// Задача 4 Напиши скрипт который проверяет возможность открыть чат с пользователем 
+/*
+* Задача 4 Напиши скрипт который проверяет возможность открыть чат с пользователем 
+*/
 // Для этого пользователь должен бытьи другом и онлайн и без режима не беспокоить &&
 // Для этого пользователь должен быть
 // - другом
@@ -229,7 +280,9 @@ const isDnd = false
 const canOpenChat = isOnline && isFrend && !isDnd
 console.log('Можно открыть чат? ', canOpenChat)
 
-// Задача 5 Напиши скрипт проверки подписки пользователя при доступе к контенту
+/*
+* Задача 5 Напиши скрипт проверки подписки пользователя при доступе к контенту
+*/
 // Есть 3 типа подписки free pro и vip
 // Получить доступ могут только пользователи pro и vip
 
@@ -238,7 +291,9 @@ const sub = 'pro'
 const canAccessContent = sub === 'pro' || sub === 'vip'
 console.log('Есть доступ к контенту? ', canAccessContent)
 
-// Оператор ветвления if это код по условию  тут приводиться к тру или фолс и тогда выполняеться тело
+/*
+* Оператор ветвления if это код по условию  тут приводиться к тру или фолс и тогда выполняеться тело
+*/
 // Если да то выполняй тело
 // if (5 > 3) {
 //     // тело
@@ -252,7 +307,9 @@ console.log('Есть доступ к контенту? ', canAccessContent)
 // }
 // console.log('Нет')
 
-// Оператор ветвления if...else Если да сделай это а в противном случае сделайй то
+/*
+* Оператор ветвления if...else Если да сделай это а в противном случае сделай то
+*/
 if (50 > 30) {
     console.log('x > y')
 } else {
@@ -260,7 +317,9 @@ console.log('x < y')
 }
 //  else тут может быть только один
 
-// Оператор ветвления else... if а тут может быть много условий Это ветка как дерево
+/*
+* Оператор ветвления else... if а тут может быть много условий Это ветка как дерево
+*/
 // Мы используем else...if когда много условий а выполнится должно только одно условие 
 const salary = 1501
 
@@ -275,7 +334,9 @@ if (salary <= 500) {
 }
 console.log('qwe')
 
-// Тернарный оператор
+/*
+* Тернарный оператор
+*/
 // Используется в простых случаях записи в переменную по условиям
 const balance = 1000
 
