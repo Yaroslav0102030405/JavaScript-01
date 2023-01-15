@@ -385,14 +385,14 @@ console.log(d);
  * Используя шаблонную строку выведи в консоль информацию о товаре, получится: 'Выбран «Генератор защитного поля», цена за штуку 2000 кредитов'.
  */
 
-const name = 'Генератор защитного поля';
-let price = 1000;
+// const name = 'Генератор защитного поля';
+// let price = 1000;
 
-console.log(`${name}, цена за штуку ${price} кредитов.`);
+// console.log(`${name}, цена за штуку ${price} кредитов.`);
 
-price = 2000;
+// price = 2000;
 
-console.log(`${name}, цена за штуку ${price} кредитов.`);
+// console.log(`${name}, цена за штуку ${price} кредитов.`);
 
 /*
  *Задание 2
@@ -496,3 +496,47 @@ if (total > ordered) {
  * Индия - 80 кредитов
  * Ямайка - 120 кредитов
  */
+
+
+let countryName = prompt('Ввести имя страны');
+let price
+countryName = countryName.toLowerCase();
+let message = ''
+
+switch (message) {
+  case 1:
+    countryName = 'Китай';
+    price = 100;
+    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
+    break;
+
+  case 2:
+    countryName = 'Чили';
+    price = 250;
+    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
+    break;
+
+  case 3:
+    countryName = 'Австралия';
+    price = 170;
+    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
+    break;
+
+  case 4:
+    countryName = 'Индия';
+    price = 80;
+    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
+    break;
+
+  case 5:
+    countryName = 'Ямайка';
+    price = 120;
+    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
+    break;
+
+  default:
+    message = 'В вашей стране доставка не доступна';
+}
+
+alert(message)
+
