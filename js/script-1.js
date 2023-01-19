@@ -497,17 +497,18 @@ if (total > ordered) {
  * Ямайка - 120 кредитов
  */
 
+// let delivery = prompt('Ввести имя страны';
+// delivery = delivery.toLowerCase()
+const country;
+let price;
+// countryName = countryName.toLowerCase();
+let message = '';
 
-let countryName = prompt('Ввести имя страны');
-let price
-countryName = countryName.toLowerCase();
-let message = ''
-
-switch (message) {
+switch (countryName) {
   case 1:
     countryName = 'Китай';
     price = 100;
-    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
+    message = 'Доставка в ${countryName} будет стоить ${100} кредитов';
     break;
 
   case 2:
@@ -534,9 +535,10 @@ switch (message) {
     message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
     break;
 
-  default:
-    message = 'В вашей стране доставка не доступна';
+  // default:
+  //   message = 'В вашей стране доставка не доступна';
 }
 
-alert(message)
+console.log(message)
+
 
