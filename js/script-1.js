@@ -93,7 +93,7 @@ document.body.style.background = color;
 // console.log(masage.length)
 
 /*
- * Конкатенация строк без пробелов (сщивание строк)
+ * Конкатенация строк без пробелов (сшивание строк)
  */
 // const firstName = 'Chelsy'
 // const lastName = 'Emerald'
@@ -251,23 +251,23 @@ console.log(!0);
 // - До х1 или после х2
 //  и само чило 50 котрое нужно проверить или входит в отрезок
 
-const x1 = 10;
-const x2 = 30;
-const number = 50;
+// const x1 = 10;
+// const x2 = 30;
+// const number = 50;
 
-console.log(`Число ${number} попадает в отрезок до ${x1}? `, number < x1);
+// console.log(`Число ${number} попадает в отрезок до ${x1}? `, number < x1);
 
-console.log(`Число ${number} попадает в отрезок до ${x2}? `, number > x2);
+// console.log(`Число ${number} попадает в отрезок до ${x2}? `, number > x2);
 
-console.log(
-  `Число ${number} попадает в отрезок от ${x1} до ${x2}? `,
-  number > x1 && number < x2,
-);
+// console.log(
+//   `Число ${number} попадает в отрезок от ${x1} до ${x2}? `,
+//   number > x1 && number < x2,
+// );
 
-console.log(
-  `Число ${number} попадает в отрезок до ${x1} или после ${x2}? `,
-  number < x1 || number > x2,
-);
+// console.log(
+//   `Число ${number} попадает в отрезок до ${x1} или после ${x2}? `,
+//   number < x1 || number > x2,
+// );
 
 /*
  * Задача 4 Напиши скрипт который проверяет возможность открыть чат с пользователем
@@ -407,14 +407,14 @@ console.log(d);
  */
 // 1 обьявить переменные
 // 2 сравнить значение
-const total = 100;
-const ordered = 50;
+// const total = 100;
+// const ordered = 50;
 
-if (total > ordered) {
-  console.log('Заказ оформлен, с вами свяжется менеджер');
-} else {
-  console.log('На складе недостаточно товаров!');
-}
+// if (total > ordered) {
+//   console.log('Заказ оформлен, с вами свяжется менеджер');
+// } else {
+//   console.log('На складе недостаточно товаров!');
+// }
 
 /* Задание 3
  * Напиши скрипт имитирующий авторизацию администратора в панели управления.
@@ -497,48 +497,64 @@ if (total > ordered) {
  * Ямайка - 120 кредитов
  */
 
-// let delivery = prompt('Ввести имя страны';
-// delivery = delivery.toLowerCase()
-const country;
-let price;
-// countryName = countryName.toLowerCase();
-let message = '';
+// let country = prompt('Ввести имя страны');
+// // country = country.toUpperCase()
 
-switch (countryName) {
-  case 1:
-    countryName = 'Китай';
-    price = 100;
-    message = 'Доставка в ${countryName} будет стоить ${100} кредитов';
-    break;
+// let countryName1 = 'Китай';
+// const countryName2 = 'Чили';
+// const countryName3 = 'Австралия';
+// const countryName4 = 'Индия';
+// const countryName5 = 'Ямайка';
+// const countryName6 = null;
 
-  case 2:
-    countryName = 'Чили';
-    price = 250;
-    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
-    break;
+// let price1 = 100;
+// let price2 = 250;
+// let price3 = 170;
+// let price4 = 80;
+// let price5 = 120;
 
-  case 3:
-    countryName = 'Австралия';
-    price = 170;
-    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
-    break;
+// let message;
 
-  case 4:
-    countryName = 'Индия';
-    price = 80;
-    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
-    break;
+// switch (country) {
+//   case countryName1:
+//     message = `Доставка в ${countryName1} будет стоить ${price1} кредитов`;
+//     break;
 
-  case 5:
-    countryName = 'Ямайка';
-    price = 120;
-    message = 'Доставка в ${countryName} будет стоить ${price} кредитов';
-    break;
+//   case countryName2:
+//     message = `Доставка в ${countryName2} будет стоить ${price2} кредитов`;
+//     break;
 
-  // default:
-  //   message = 'В вашей стране доставка не доступна';
-}
+//   case countryName3:
+//     message = `Доставка в ${countryName3} будет стоить ${price3} кредитов`;
+//     break;
 
-console.log(message)
+//   case countryName4:
+//     message = `Доставка в ${countryName4} будет стоить ${price4} кредитов`;
+//     break;
 
+//   case countryName5:
+//     message = `Доставка в ${countryName5} будет стоить ${price5} кредитов`;
+//     break;
 
+//   case countryName6:
+//     message = `Отмененно пользователем.`
+//     break;
+
+//   default:
+//     message = `В вашей стране доставка не доступна`;
+// }
+
+// alert(message)
+
+/* Задача 6
+ * Напиши скрипт который просит посетителя ввести число в prompt до тех пор,
+ * пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
+ *
+ * При загрузке страницы пользователю предлагается в prompt ввести число. Ввод добавляется к значению переменной total.
+ * Операция ввода числа продолжается до тех пор, пока пользователь не нажмет кнопку Cancel в prompt.
+ * После того как пользователь прекратил ввод нажав кнопку Cancel, показать alert со строкой 'Общая сумма чисел равна [сумма]'
+ *
+ * Делать проверку того, что пользователь ввел именно число, а не произвольный набор символов, не нужно.
+ * Если хочешь, в случае некорректного ввода, показывай alert с текстом 'Было введено не число, попробуйте еще раз',
+ * при этом результат prompt плюсовать к общей сумме не нужно, после чего снова пользователю предлагается ввести число в prompt.
+ */
