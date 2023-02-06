@@ -14,8 +14,7 @@ b = 20;
 // console.log(b);
 
 /*
- * Операто typeof. Проверить тип данных у значений которые лежфт в переменных
- */
+ * Операто typeof. Проверить тип данных у значений которые лежфт в переменных /// string, numbers, object, boolean, undefined
 
 const username = 'Yaroslav';
 const numberOne = 1;
@@ -26,7 +25,7 @@ let message;
 // console.log(typeof username);
 
 /*
- * Диалоговое окно prompt и как узнать тип данных typeof /// number, string, true, false
+ * Диалоговое окно prompt и как узнать тип данных typeof 
  */
 // let avn = prompt('Ви бажаєте підписатися?')
 // avn = Number(avn)
