@@ -164,17 +164,18 @@ const welcomeMsd = `Гость ${firstName} ${lastName} поселяется в 
 // console.log(brand[0])
 
 /*
- * Метод slice() Обрезать в строке любую букву или часть слова
+ * Метод slice() - обрезать в строке любую букву или часть слова
  */
 // let brand = 'SuMsung'
 // console.log(brand.slice(1).toLowerCase())
 
 let brand = 'SuMsung'
 brand = brand[0] + brand.slice(1, 4)
-console.log(brand.toLowerCase());
+// console.log(brand.toLowerCase());
 
 /*
  * Метод includes() - поиск в строке нужного слова, возвращает буль - true если входит и false в противном случае
+ * - Задача. Найти зарезервированное (нужное) слово с помощью метода includes()
  */
 // const word1 = 'cпам';
 // const word2 = 'pаспродажа';
@@ -214,65 +215,70 @@ console.log(brand.toLowerCase());
 // console.log(Number(true))
 
 /*
- * Оператор равенства
+ * Оператор строгое равенства === В таком случае, все равно только себе 5 = 5, a = a
  */
 // const isEqual = 1 === '1'
 // console.log(isEqual)
-// каждое сравнение равно только самому себе 1 равно 1 тру равно тру и так далее
-// это число а это строка они не равны поэтому фолс
 
 /*
- * Оператор Не равно
+ * Оператор строгое неравенство !== Не равно
  */
 const isEqual = 1 !== '1';
-console.log(isEqual);
+// console.log(isEqual);
 
 /*
  * Приведение к булю используем конструктор Boolean()
  */
 // Есть преобразование булевое это когда любое значение приводится к true или к false
-console.log(Boolean(5));
-console.log(Boolean('qwe'));
-// Есть правило 6 ложных значений
-console.log(Boolean(0));
-console.log(Boolean(NaN));
-console.log(Boolean(null));
-console.log(Boolean(undefined));
-console.log(Boolean(''));
-console.log(Boolean(false));
-// Абсолютно все остальное приводится к true. Обьекты функции массивы приводится к true в булевом преобразовании
+// console.log(Boolean(5));
+// console.log(Boolean('qwe'));
+
+/*
+* Есть правило 6 ложных значений
+* Запомните 6 ложных (falsy) значений, приводящихся к false в логическом преобразовании: 
+* 0, NaN, null, undefined, пустая строка и false.Абсолютно все остальное приводится к true.
+*/
+
+// console.log(Boolean(0));
+// console.log(Boolean(NaN));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(''));
+// console.log(Boolean(false));
 
 /*
  * Логическое И &&
+* - Проверяет все значения на true или false
+* - Запинается на лжи (false)
+* - Возвращает то, на чем запнулось или последний оперант
+* Применятся когда нужно проверить 2 условия
  */
-//  - Проверяет все значения на true или false
-// - Запинается на лжи (false)
-//  - Возвращает то, на чем запнулось или последний оперант
-// Применятся когда нужно проверить 2 условия
-console.log(5 && 6);
-console.log(5 && 6 && 7 && 'hello');
+
+// console.log(5 && 6);
+// console.log(5 && 6 && 7 && 'hello');
 // В этой цепочке нет ни одного значения false по этому возвращает последнее значение
 // Ищет до первого false и запинаеться на нем
-console.log(false && 'hello');
+// console.log(false && 'hello');
 
 /*
  * Логическое ИЛИ (оператор ||)
+* - Запинается на правде true
+* - Возвращает то, на чем заптнулось или послений оперант
+* То есть или это или это или это
  */
-// - Запинается на правде true
-// - Возвращает то, на чем заптнулось или послений оперант
-//  То есть или это или это или это
-console.log(5 || 7 || 8 || 10);
-console.log(false || 7 || 8 || 10);
-console.log(false || 0 || 8 || 10);
-console.log(false || 0 || null || 10);
+
+// console.log(5 || 7 || 8 || 10);
+// console.log(false || 7 || 8 || 10);
+// console.log(false || 0 || 8 || 10);
+// console.log(false || 0 || null || 10);
 
 /*
- * Лоническое НЕ (операто !)
+ * Лоническое НЕ (оператоp !)
  */
 // Делает инверсию правда > лож и лож > правда
-console.log(!false);
-console.log(!true);
-console.log(!0);
+// console.log(!false);
+// console.log(!true);
+// console.log(!0);
 
 /*
  * Задача 3 Напииши скрпит который проверяет вхождение числа в отрезок обозначенный х1 и х2 ${переменная}
