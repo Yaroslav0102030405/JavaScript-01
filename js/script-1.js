@@ -2,31 +2,28 @@
  * Обьявление переменной const
  */
 
-const a = 10
-console.log(a)
+const a = 10;
+// console.log(a)
 
 /*
-* Обьявление переменной let
-*/
+ * Обьявление переменной let
+ */
 
 let b = 2;
 b = 20;
-console.log(b);
+// console.log(b);
 
 /*
-* Операто typeof. Проверить тип данных у значения которое лежит в переенной 
-*/
+ * Операто typeof. Проверить тип данных у значений которые лежфт в переменных
+ */
 
-// const ab = 5
-// let abc = 10
-// abc = 15
-// console.log(typeof abc)
+const username = 'Yaroslav';
+const numberOne = 1;
+const nothing = null;
+const isOpen = true;
+let message;
 
-const ab = 5;
-let abc = true;
-abc = false;
-console.log(typeof abc);
-
+// console.log(typeof username);
 
 /*
  * Диалоговое окно prompt и как узнать тип данных typeof /// number, string, true, false
