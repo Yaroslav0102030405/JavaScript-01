@@ -26,44 +26,55 @@ let message;
 // console.log(typeof username);
 
 /*
- * Диалоговое окно prompt
+ * prompt - диалоговое окно для получения данных от пользователя
  */
 // let messagePrompt = prompt('Ви бажаєте підписатися?')
 // // messagePrompt = Number(messagePrompt)
 // console.log(messagePrompt)
 /*
- * Number.parseInt - обрезать целое число /// 50
+ * Метод Number.parseInt - парсит из строки целое число /// 50
  */
 let elementWidth = '50px';
 elementWidth = Number.parseInt(elementWidth);
-console.log(elementWidth);
+// console.log(elementWidth);
 
 /*
- * Number.parseFloat - обрезать дробное число с точкой /// 200.74
+ * Метод Number.parseFloat - парсит из строки дробное число /// 200.74
  */
 let elementWidthp = '200.74px';
 elementWidthp = Number.parseFloat(elementWidthp);
-console.log('elementWidth:', elementWidthp);
+// console.log(elementWidthp);
 
 /*
- * После точки 3 числа Number(salary.toFixed(3) /// 1300.678
+ * Метод toFixed() - результат отсечь до определённого знака после запятой /// 1300.678 (3)
  */
-// let salary = 1300.67890
-// salary = Number(salary.toFixed(3))
-// console.log(salary)
+let sumSalary = 1300.67890
+sumSalary = Number(sumSalary.toFixed(3))
+// console.log(sumSalary)
 
 /*
- * Перевести в число Конструктор Number(quantity) /// 12 число
+ * Метод Number() - проверка на число
+ * - NaN - не возможно привести к числу (строку привести к числу логически невозможно)
  */
-let quantity = '12';
-console.log(Number(quantity)); /// 12 число
+const value = '5';
+const string = 'Hello'
+// console.log(Number(string));
 
 /*
- * Возвести число в степень Math.pow()
+ * Класс Math.pow() - возвести число в степень
+* Предоставляет набор методов для работы с числами
+* - Math.floor(num) - возвращает наибольшее целое число, меньшее, либо равное указанному
+* - Math.ceil(num) - возвращает наименьшее целое число, большее, либо равное указанному числу.
+* - Math.round(num) - возвращает значение числа, округлённое до ближайшего целого
+* - Math.max(num1, num2, ...) - возвращает наибольшее число из набора 
+* - Math.min(num1, num2, ...) - возвращает наименьшее число из набора
+* - Math.pow(base, exponent) - возведение в степень
+* - Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
+
  */
-// const base = 2
-// const power = 5
-// const result = Math.pow(base, power)
+const base = 2
+const power = 5
+const result = Math.pow(base, power)
 // console.log(base ** power)
 
 /*
