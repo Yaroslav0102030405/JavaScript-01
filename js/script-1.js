@@ -72,17 +72,17 @@ const string = 'Hello'
 * - Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
 
  */
-const base = 2
-const power = 5
-const result = Math.pow(base, power)
+// const base = 2
+// const power = 5
+// const result = Math.pow(base, power)
 // console.log(base ** power)
 
 /*
- * Сгенерировать случайное число формула Math.round(Math.random() * (max - min) + min)
+ * Сгенерировать случайное число с помощью Math.round(Math.random() * (max - min) + min) псевдослучайное число от 1 до 10
  */
-// const max = 10
-// const min = 0
-// const result = Math.round(Math.random() * (max - min) + min)
+const max = 30
+const min = 0
+const result = Math.round(Math.random() * (max - min) + min)
 // console.log(result)
 
 /*
@@ -105,24 +105,25 @@ const result = Math.pow(base, power)
 /*
  * Задача 2 Генерим псевдослучайные цвета body
  */
-const colors = ['tomato', 'while', 'pink', 'orange'];
-const max = colors.length - 1;
-const min = 0;
+// const colors = ['tomato', 'while', 'pink', 'orange'];
+// const max = colors.length - 1;
+// const min = 0;
 
-const index = Math.round(Math.random() * (max - min) + min);
-const color = colors[index];
-console.log(color);
+// const index = Math.round(Math.random() * (max - min) + min);
+// const color = colors[index];
+// console.log(color);
 
-document.body.style.background = color;
+// document.body.style.background = color;
 
 /*
- * Узнать длину строки .length
+ * Свойство length - узнать длину строки
  */
 // const masage = 'В этой строке 26 символов.'
 // console.log(masage.length)
 
 /*
- * Конкатенация строк без пробелов (сшивание строк)
+ * Конкатенация строк (сшивание строк)
+ * - Если применить оператор + к строке и любому другому типу данных, результатом операции «сложения» будет строка.
  */
 // const firstName = 'Chelsy'
 // const lastName = 'Emerald'
@@ -145,10 +146,12 @@ const type = 'VIP';
 const room = 716;
 
 const welcomeMsd = `Гость ${firstName} ${lastName} поселяется в ${type} номер ${room} `;
-console.log(welcomeMsd);
+// console.log(welcomeMsd);
 
 /*
- * Нормализаия пользовательского ввода .toLowerCase() Перевести в нижний регистр
+ * Методы toLowerCase() - возвращает новую строку и приводит ее к нижнему регистру
+* - toUpperCase() - приводит к верхнему регистру
+* - Нормализация пользовательского ввода
  */
 // let brand = 'SuMsUnG'
 // brand = brand.toLowerCase()
@@ -161,17 +164,17 @@ console.log(welcomeMsd);
 // console.log(brand[0])
 
 /*
- * Обрезать в строке любую букву
+ * Метод slice() Обрезать в строке любую букву или часть слова
  */
-// let brand = 'SuMsbng'
+// let brand = 'SuMsung'
 // console.log(brand.slice(1).toLowerCase())
 
-// let brand = 'SuMsbng'
-// brand = brand[0] + brand.slice(1).toLowerCase()
-// console.log(brand)
+let brand = 'SuMsung'
+brand = brand[0] + brand.slice(1, 4)
+console.log(brand.toLowerCase());
 
 /*
- * Поиск в строке нужного слова с методом includes()
+ * Метод includes() - поиск в строке нужного слова, возвращает буль - true если входит и false в противном случае
  */
 // const word1 = 'cпам';
 // const word2 = 'pаспродажа';
