@@ -1,12 +1,12 @@
 /*
- * Обьявление переменной const
+ * Обьявление переменной const - переменная которой должно сразу быть присвоенно значение
  */
 
 const a = 10;
 // console.log(a)
 
 /*
- * Обьявление переменной let
+ * Обьявление переменной let - переменная которой можно переприсвоить значение много раз
  */
 
 let b = 2;
@@ -14,7 +14,8 @@ b = 20;
 // console.log(b);
 
 /*
- * Операто typeof. Проверить тип данных у значений которые лежфт в переменных /// string, numbers, object, boolean, undefined
+ * Операто typeof - проверить тип данных у значения которое лежит в переменной /// string, numbers, object, boolean, undefined
+*/
 
 const username = 'Yaroslav';
 const numberOne = 1;
@@ -25,20 +26,20 @@ let message;
 // console.log(typeof username);
 
 /*
- * Диалоговое окно prompt и как узнать тип данных typeof 
+ * Диалоговое окно prompt
  */
-// let avn = prompt('Ви бажаєте підписатися?')
-// avn = Number(avn)
-// console.log(typeof avn)
+// let messagePrompt = prompt('Ви бажаєте підписатися?')
+// // messagePrompt = Number(messagePrompt)
+// console.log(messagePrompt)
 /*
- * Number.parseInt (обрезать целое число) /// 50
+ * Number.parseInt - обрезать целое число /// 50
  */
 let elementWidth = '50px';
 elementWidth = Number.parseInt(elementWidth);
-console.log('elementWidth:', elementWidth);
+console.log(elementWidth);
 
 /*
- * Number.parseFloat (обрезать число с точкой) /// 200.74
+ * Number.parseFloat - обрезать дробное число с точкой /// 200.74
  */
 let elementWidthp = '200.74px';
 elementWidthp = Number.parseFloat(elementWidthp);
