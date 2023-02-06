@@ -1,11 +1,32 @@
 /*
- * Обьявление переменной const и let и отличие между ними.
+ * Обьявление переменной const
  */
-let an = 2;
-an = 20;
-const bn = 10;
-const vn = true;
-console.log(typeof vn);
+
+const a = 10
+console.log(a)
+
+/*
+* Обьявление переменной let
+*/
+
+let b = 2;
+b = 20;
+console.log(b);
+
+/*
+* Операто typeof. Проверить тип данных у значения которое лежит в переенной 
+*/
+
+// const ab = 5
+// let abc = 10
+// abc = 15
+// console.log(typeof abc)
+
+const ab = 5;
+let abc = true;
+abc = false;
+console.log(typeof abc);
+
 
 /*
  * Диалоговое окно prompt и как узнать тип данных typeof /// number, string, true, false
@@ -559,10 +580,10 @@ console.log(d);
  * при этом результат prompt плюсовать к общей сумме не нужно, после чего снова пользователю предлагается ввести число в prompt.
  */
 
-const number = Number(prompt('Введіть число'));
-let total = 0;
-let result;
+// const number = Number(prompt('Введіть число'));
+// let total = 0;
+// let result;
 
-result = number += total
+// result = number += total
 
-alert(result);
+// alert(result);
