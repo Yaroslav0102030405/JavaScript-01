@@ -9,7 +9,7 @@ Number.parseInt (обрезать целое число) 50px /// 50
 
 Number.parseFloat (обрезать число с точкой)
 
-После точки 3 числа Number(salary.toFixed(3)
+После точки 3 числа Number(salary.toFixed(3))
 
 Перевести в число Конструктор Number(quantity) /// 12 число
 
