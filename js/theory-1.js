@@ -361,11 +361,10 @@
  * console.log(!true); // false console.log(!false); // true
  */
 
-
 /**
  * ! Розгалуження
- * Розгалуження використовуються для виконання різного коду залежно від умови. 
- * Принцип роботи простий - результат умови наводиться до булю true або false, 
+ * Розгалуження використовуються для виконання різного коду залежно від умови.
+ * Принцип роботи простий - результат умови наводиться до булю true або false,
  * після чого потік програми прямує в ту чи іншу гілку.
  */
 
@@ -374,8 +373,8 @@
  * if (условие) {
  * // тело if
  * }
- *  Вхідні дані, що наводяться до булю, називаються умовою. 
- * Умову поміщають за оператором if у круглих дужках. 
+ *  Вхідні дані, що наводяться до булю, називаються умовою.
+ * Умову поміщають за оператором if у круглих дужках.
  * ? Якщо умова наводиться до true, то виконується код фігурних дужках тіла if.
  * let cost = 0;
  * const subscription = "pro";
@@ -383,7 +382,7 @@
  * cost = 100;
  * }
  * console.log(cost); // 100
- * 
+ *
  * ? Якщо умова наводиться до false, код у фігурних дужках буде пропущено.
  * let cost = 0;
  * const subscription = "free";
@@ -392,3 +391,36 @@
  * }
  * console.log(cost); // 0
  */
+
+let value1;
+value1 = Math.PI.toFixed(2);
+console.log(value1);
+
+// const arrey = [11, 16, 12, 51, 12, 13, 51]
+
+let setOfNumbers;
+setOfNumbers = Math.max(11, 16, 12, 51, 12, 13, 51);
+console.log(setOfNumbers);
+
+let setOfNumbers2;
+setOfNumbers = Math.min(11, 16, 12, 51, 12, 13, 51);
+console.log(setOfNumbers);
+
+let randomNumber;
+randomNumber = Math.random().toFixed(2);
+console.log(randomNumber);
+
+let randomNumber2;
+randomNumber2 = Math.floor(Math.random() * 10 + 1);
+console.log(randomNumber2);
+
+let mathematicalOperation;
+mathematicalOperation = (0.6 * 10 + 0.7 * 10) / 10;
+console.log(mathematicalOperation);
+
+let mathematicalOperation2;
+mathematicalOperation2 = (0.6 + 0.7).toFixed(1);
+console.log(mathematicalOperation2);
+
+const numberFromString = '100$';
+console.log(Number.parseInt(numberFromString));
