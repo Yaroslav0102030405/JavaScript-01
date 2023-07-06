@@ -424,3 +424,20 @@ console.log(mathematicalOperation2);
 
 const numberFromString = '100$';
 console.log(Number.parseInt(numberFromString));
+
+
+
+// const message = "Welcome in JavaScript"
+
+// alert(message)
+
+// let message = confirm("Вам есть 18 лет?");
+
+// if (message === true) {
+//   console.log("Добро пожаловать");
+// } else {
+//   console.log("Доступ запрещен")
+// }
+
+
+// console.log( typeof message);
