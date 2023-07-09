@@ -392,38 +392,38 @@
  * console.log(cost); // 0
  */
 
-let value1;
-value1 = Math.PI.toFixed(2);
-console.log(value1);
+// let value1;
+// value1 = Math.PI.toFixed(2);
+// console.log(value1);
 
 // const arrey = [11, 16, 12, 51, 12, 13, 51]
 
-let setOfNumbers;
-setOfNumbers = Math.max(11, 16, 12, 51, 12, 13, 51);
-console.log(setOfNumbers);
+// let setOfNumbers;
+// setOfNumbers = Math.max(11, 16, 12, 51, 12, 13, 51);
+// console.log(setOfNumbers);
 
-let setOfNumbers2;
-setOfNumbers = Math.min(11, 16, 12, 51, 12, 13, 51);
-console.log(setOfNumbers);
+// let setOfNumbers2;
+// setOfNumbers = Math.min(11, 16, 12, 51, 12, 13, 51);
+// console.log(setOfNumbers);
 
-let randomNumber;
-randomNumber = Math.random().toFixed(2);
-console.log(randomNumber);
+// let randomNumber;
+// randomNumber = Math.random().toFixed(2);
+// console.log(randomNumber);
 
-let randomNumber2;
-randomNumber2 = Math.floor(Math.random() * 10 + 1);
-console.log(randomNumber2);
+// let randomNumber2;
+// randomNumber2 = Math.floor(Math.random() * 10 + 1);
+// console.log(randomNumber2);
 
-let mathematicalOperation;
-mathematicalOperation = (0.6 * 10 + 0.7 * 10) / 10;
-console.log(mathematicalOperation);
+// let mathematicalOperation;
+// mathematicalOperation = (0.6 * 10 + 0.7 * 10) / 10;
+// console.log(mathematicalOperation);
 
-let mathematicalOperation2;
-mathematicalOperation2 = (0.6 + 0.7).toFixed(1);
-console.log(mathematicalOperation2);
+// let mathematicalOperation2;
+// mathematicalOperation2 = (0.6 + 0.7).toFixed(1);
+// console.log(mathematicalOperation2);
 
-const numberFromString = '100$';
-console.log(Number.parseInt(numberFromString));
+// const numberFromString = '100$';
+// console.log(Number.parseInt(numberFromString));
 
 
 
@@ -441,3 +441,66 @@ console.log(Number.parseInt(numberFromString));
 
 
 // console.log( typeof message);
+
+
+// Задание 1
+// const name = "Генератор защитного поля";
+// const price = 1000;
+// let message = '';
+
+// if (price === 1000) {
+// message = `Выбран ${name}, цена за штуку ${price} кредитов`
+// }
+
+// if (price === 2000) {
+// message = `Выбран ${name}, цена за штуку ${price} кредитов`
+// }
+
+// console.log(message)
+
+// Задание 2
+// const total = 100
+// const ordered = 30
+// let message = ""
+
+// if (total > ordered) {
+//   message = "Заказ оформлен, с вами свяжется менеджер"
+// } else {
+//   message = "На складе недостаточно товаров!"
+// }
+
+// console.log(message)
+
+// Задание 3
+// const authorizationAdmin = prompt("Авторизация администратора")
+// const ADMIN_PASSWORD = 'jqueryismyjam';
+// let message = "";
+
+// if (authorizationAdmin === null) {
+// message = "Отменено пользователем!"
+// } else if (authorizationAdmin === ADMIN_PASSWORD) {
+//   message = "Добро пожаловать!"
+// } else {
+//   message = "Доступ запрещен, неверный пароль!"
+// }
+
+// console.log(message)
+
+// Задание 4
+// const questionUser = prompt("Введите количество дроидов которое вы хочете купить")
+// const credits = 23580
+// const pricePerDroid = 3000
+// const totalPrice = 0
+// let message = ""
+// let number = 0
+
+// if (questionUser === null) {
+//   message ="Отменено пользователем!"
+// } else if (pricePerDroid < credits) {
+//   message = `Вы купили ${pricePerDroid} дроидов, на счету осталось ${credits} кредитов.`
+// } 
+
+// // pricePerDroid += totalPrice
+
+
+// console.log(message)
