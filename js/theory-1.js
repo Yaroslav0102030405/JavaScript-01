@@ -490,17 +490,84 @@
 // const questionUser = prompt("Введите количество дроидов которое вы хочете купить")
 // const credits = 23580
 // const pricePerDroid = 3000
-// const totalPrice = 0
 // let message = ""
-// let number = 0
+// let totalPrice = ""
+// const orderedQuantity = 1
 
 // if (questionUser === null) {
 //   message ="Отменено пользователем!"
-// } else if (pricePerDroid < credits) {
-//   message = `Вы купили ${pricePerDroid} дроидов, на счету осталось ${credits} кредитов.`
-// } 
+// } else if (questionUser === true) {
+//   message = `Вы купили ${totalPrice} дроидов, на счету осталось ${credits} кредитов.`
+// } else if (credits < pricePerDroid) {
+//   message = "Недостаточно средств на счету!"
+// }
 
-// // pricePerDroid += totalPrice
+// totalPrice = pricePerDroid * orderedQuantity
 
 
 // console.log(message)
+
+// Задание 5
+
+// let countryName = prompt("ввести имя страны")
+// // const normalizedToLowerCaseCountryName = countryName.toLowerCase()
+// // normalizedToLowerCaseCountryName + countryName
+// // const normalizedToUpperCaseCountryName = countryName.toUpperCase()
+
+// let price
+// let message
+
+// if (countryName === "") {
+//   message = "Пользователь ничего не выбрал"
+// }
+
+// if (countryName === null) {
+// message = "Отменено пользователем!"
+// }
+
+// switch (countryName) {
+//   case "Китай":
+//     price = 100
+//     message = `Доставка в ${countryName} будет стоить ${price} кредитов`
+//     break;
+
+//     case "Чили":
+//       price = 250
+//       message = `Доставка в ${countryName} будет стоить ${price} кредитов`
+//       break;
+
+//       case "Австралия":
+//         price = 170
+//         message = `Доставка в ${countryName} будет стоить ${price} кредитов`
+//         break;
+
+//         case "Индия":
+//           price = 80
+//           message = `Доставка в ${countryName} будет стоить ${price} кредитов`
+//           break;
+
+//           case "Ямайка":
+//             price = 120
+//             message = `Доставка в ${countryName} будет стоить ${price} кредитов`
+//             break;
+
+//   default:
+//     alert("В вашей стране доставка не доступна") 
+// }
+
+// console.log(message)
+
+// Задание 6
+// let user = prompt("ввести число");
+// user = Number(user);
+
+// let total = 0;
+
+// if (isNaN(user)) {
+// alert("Было введено не число, попробуйте еще раз")
+// }
+
+// total = total += user
+
+// console.log(user)
+// console.log(total)
