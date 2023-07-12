@@ -487,23 +487,25 @@
 // console.log(message)
 
 // Задание 4
-// const questionUser = prompt("Введите количество дроидов которое вы хочете купить")
-// const credits = 23580
-// const pricePerDroid = 3000
-// let message = ""
-// let totalPrice = ""
-// const orderedQuantity = 1
+// let questionUser = prompt("Введите количество дроидов которое вы хочете купить")
+// let credits = 23580
+// let pricePerDroid = 3000
+// let message
+// let totalPrice = questionUser * pricePerDroid
+// let balanceCredite = credits - totalPrice
+// // const orderedQuantity = 1
 
 // if (questionUser === null) {
 //   message ="Отменено пользователем!"
-// } else if (questionUser === true) {
-//   message = `Вы купили ${totalPrice} дроидов, на счету осталось ${credits} кредитов.`
-// } else if (credits < pricePerDroid) {
+// } else if (questionUser === "") {
+//   message = "Пользователь ничего не купил"
+// } else if (balanceCredite >= 0) {
+//   message = `Вы купили ${questionUser} дроидов, на счету осталось ${balanceCredite} кредитов.`
+// } else if (balanceCredite < 0) {
 //   message = "Недостаточно средств на счету!"
+// } else if (isNaN(questionUser)) {
+// message = "Было введено не число, попробуйте еще раз"
 // }
-
-// totalPrice = pricePerDroid * orderedQuantity
-
 
 // console.log(message)
 
@@ -516,13 +518,14 @@
 
 // let price
 // let message
+// // let country
 
 // if (countryName === "") {
 //   message = "Пользователь ничего не выбрал"
-// }
-
-// if (countryName === null) {
+// } else if (countryName === null) {
 // message = "Отменено пользователем!"
+// } else {
+// countryName = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase()
 // }
 
 // switch (countryName) {
@@ -558,16 +561,19 @@
 // console.log(message)
 
 // Задание 6
-// let user = prompt("ввести число");
-// user = Number(user);
-
+// let input
 // let total = 0;
 
-// if (isNaN(user)) {
-// alert("Было введено не число, попробуйте еще раз")
-// }
+// do {
+//   input = prompt("ввести число");
 
-// total = total += user
+//   if (isNaN(input)) {
+//     alert("Было введено не число, попробуйте еще раз")
+//     } else {
+//       total += Number(input)
+//     }
+// } while (input !== null);
+//   alert(`Общая сумма чисел равна ${total}`)
 
-// console.log(user)
+// console.log(input)
 // console.log(total)
