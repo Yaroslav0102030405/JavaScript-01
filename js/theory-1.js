@@ -646,18 +646,51 @@ document.body.style.backgroundColor = color
 
 
 
-const quantity = prompt("Введите количество товара")
+// const quantity = prompt("Введите количество товара")
+// let message = ""
 
-let message = ""
+// if (quantity === "") {
+//   message = "Пользователь ничего не заказ"
+// }  else if (quantity === null) {
+//   message = `Отмененно пользователем`
+// } else if (quantity == Number(quantity)) {
+//   message = `Вы заказали ${quantity} холодильников`
+// } else if (quantity !== Number(quantity)) {
+//   message = "Вам перезвонит менеджер"
+// }
 
-if (quantity === "") {
-  message = "Пользователь ничего не заказ"
-}  else if (quantity === null) {
-  message = `Отмененно пользователем`
-} else if (Number) {
-  message = `Вы заказали ${quantity} холодильников`
-} else {
-  message = "Вам перезвонит менеджер"
-}
+// console.log(message)
 
-console.log(message)
+// let brand = prompt("Давай бренд")
+// // brand = brand.toLowerCase() 
+// brand = brand[0].toUpperCase() + brand.slice(1).toLowerCase()
+
+// // brand[0].toUpperCase() - приводим первую букву к верхнему регистру
+// // brand.slice(1).toLowerCase() - начиная с индекса 1 строку привести к нижнему регистру
+// console.log(brand)
+
+// const word1 = "спам"
+// const word2 = "распродажа"
+
+// const string1 = "Привет, я принц Абдул, это не спам, предлагаю тебе миллион!"
+// const string2 = "Самая большая распродажа этой недели, не пропустите!"
+// const string3 = "Рекламная камания!"
+
+// console.log(string1.includes(word1))
+// console.log(string1.includes(word2))
+
+// console.log(string2.includes(word1))
+
+// const normalizedString2 = string2.toLowerCase()
+// // Привели строку к нижнему регистру
+// console.log(normalizedString2.includes(word2))
+
+// console.log(string3.includes(word1))
+// console.log(string3.includes(word2))
+
+const x1 = 10
+const x2 = 30
+const number = 5
+
+console.log(`Число ${number} попадает в отрезок до ${x1}`, number < x1)
+console.log(`Число ${number} попадает в отрезок после ${x2}`, number > x2)
