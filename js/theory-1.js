@@ -577,3 +577,87 @@
 
 // console.log(input)
 // console.log(total)
+
+// let elementWidth = "50.21213px"
+
+// elementWidth = Number.parseFloat(elementWidth)
+// console.log(elementWidth)
+
+// let salary = 13.123456
+// // salary = salary.toFixed(1)
+// // salary = Number(salary)
+// salary = Number(salary.toFixed(2))
+// console.log(salary)
+
+// // let quantity = prompt("Введите число")
+// // quantity = Number(quantity)
+// // console.log(quantity)
+
+// console.log(Math.PI)
+
+// const base = 5
+// const power = 5
+
+// const result = Math.pow(base, power)
+// console.log(result)
+
+// let base = prompt("Давай число")
+// base = Number(base)
+// console.log(base)
+
+// let power = prompt("Давай степень")
+// power = Number(power)
+// console.log(power)
+
+// const result = base ** power
+// console.log(result)
+
+// const max = 50
+// const min = 30
+
+// const result = Math.round(Math.random() * (max - min) + min)
+
+// // Math.round() - округляет число
+// // Math.random() - генерит случайное число
+
+// console.log(result)
+
+const colors = ["blue", "tomato", "orange", "deeppink"]
+const max = colors.length - 1
+const min = 0
+
+const index = Math.round(Math.random() * (max - min) + min)
+
+const color = colors[index]
+
+console.log(color)
+
+document.body.style.backgroundColor = color
+
+// const message = "В этой строке 26 символов."
+
+// console.log(message.length)
+
+// const firstName = "Chelsy"
+// const lastName = "Emarald"
+
+// const fullName = firstName + " " + lastName
+// console.log(fullName)
+
+
+
+const quantity = prompt("Введите количество товара")
+
+let message = ""
+
+if (quantity === "") {
+  message = "Пользователь ничего не заказ"
+}  else if (quantity === null) {
+  message = `Отмененно пользователем`
+} else if (Number) {
+  message = `Вы заказали ${quantity} холодильников`
+} else {
+  message = "Вам перезвонит менеджер"
+}
+
+console.log(message)
