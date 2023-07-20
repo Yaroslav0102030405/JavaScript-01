@@ -716,3 +716,12 @@ const sub = "pro"
 const canAccessContent = sub === "pro" || sub === "vip"
 
 console.log("Есть доступ к контенту?", canAccessContent)
+
+
+
+const balance = -1000
+
+const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс'
+// const massage = условие ? выражение 1 : выражение 2
+
+console.log(message)
