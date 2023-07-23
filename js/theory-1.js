@@ -725,3 +725,23 @@ const message = balance >= 0 ? 'Позитивный баланс' : 'Негат
 // const massage = условие ? выражение 1 : выражение 2
 
 console.log(message)
+
+
+
+// Задаг=ние 4
+const formatString = function(string) {
+  
+
+  if (string.length > 40) {
+    // console.log('Длина больше 40')
+    return string.slice(0, 40) + '...'
+  } else if (string.length < 40) {
+    return string
+  }
+  
+}
+
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+console.log(formatString('Curabitur ligula sapien.'));
+console.log(formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',),);
