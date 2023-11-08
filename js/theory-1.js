@@ -425,8 +425,6 @@
 // const numberFromString = '100$';
 // console.log(Number.parseInt(numberFromString));
 
-
-
 // const message = "Welcome in JavaScript"
 
 // alert(message)
@@ -439,9 +437,7 @@
 //   console.log("Доступ запрещен")
 // }
 
-
 // console.log( typeof message);
-
 
 // Задание 1
 // const name = "Генератор защитного поля";
@@ -555,7 +551,7 @@
 //             break;
 
 //   default:
-//     alert("В вашей стране доставка не доступна") 
+//     alert("В вашей стране доставка не доступна")
 // }
 
 // console.log(message)
@@ -622,17 +618,17 @@
 
 // console.log(result)
 
-const colors = ["blue", "tomato", "orange", "deeppink"]
-const max = colors.length - 1
-const min = 0
+const colors = ['red', 'yellow', 'green', 'orange', 'blue']; //храним массив цветов
+const min = 0; //первый индекс
+const max = colors.length - 1; //последний индекс
 
-const index = Math.round(Math.random() * (max - min) + min)
+const index = Math.round(Math.random() * (max - min) + min); //генерим случайный индекс с первого до последнего
 
-const color = colors[index]
+const color = colors[index]; //находим текущий цвет
 
-console.log(color)
+console.log(color);
 
-document.body.style.backgroundColor = color
+document.body.style.backgroundColor = color; //вешаем цвет на боди
 
 // const message = "В этой строке 26 символов."
 
@@ -643,8 +639,6 @@ document.body.style.backgroundColor = color
 
 // const fullName = firstName + " " + lastName
 // console.log(fullName)
-
-
 
 // const quantity = prompt("Введите количество товара")
 // let message = ""
@@ -662,7 +656,7 @@ document.body.style.backgroundColor = color
 // console.log(message)
 
 // let brand = prompt("Давай бренд")
-// // brand = brand.toLowerCase() 
+// // brand = brand.toLowerCase()
 // brand = brand[0].toUpperCase() + brand.slice(1).toLowerCase()
 
 // // brand[0].toUpperCase() - приводим первую букву к верхнему регистру
@@ -711,37 +705,97 @@ document.body.style.backgroundColor = color
 // const canOpenChat = isOnline && isFriend && !isDnd
 // console.log("Можно открыть чат?", canOpenChat)
 
-const sub = "pro"
+const sub = 'pro';
 
-const canAccessContent = sub === "pro" || sub === "vip"
+const canAccessContent = sub === 'pro' || sub === 'vip';
 
-console.log("Есть доступ к контенту?", canAccessContent)
+console.log('Есть доступ к контенту?', canAccessContent);
 
+const balance = -1000;
 
-
-const balance = -1000
-
-const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс'
+const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
 // const massage = условие ? выражение 1 : выражение 2
 
-console.log(message)
-
-
+console.log(message);
 
 // Задаг=ние 4
-const formatString = function(string) {
-  
-
+const formatString = function (string) {
   if (string.length > 40) {
     // console.log('Длина больше 40')
-    return string.slice(0, 40) + '...'
+    return string.slice(0, 40) + '...';
   } else if (string.length < 40) {
-    return string
+    return string;
   }
-  
-}
+};
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
 console.log(formatString('Curabitur ligula sapien.'));
-console.log(formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',),);
+console.log(
+  formatString(
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+  ),
+);
+
+// let number = prompt('Введите число') //в переменную записываем метод
+// number = Number(number) //в переменную записываем результат метода
+// console.log(number) //выводим в консоль
+
+// let degree = prompt('Введите степень')
+// degree = Number(degree)
+// console.log(degree)
+
+// const result = number * degree //полученные результаты умножаем
+
+// console.log(result) //выводим в консоль
+
+// const min1 = 50
+
+// const max2 = 80
+
+// const result = Math.random() * (max2 - min1) + min1; //возвращаем случайное число в заданном диапозоне
+// console.log(Math.round(result)) //и округляем реузультат
+// // console.log(Number(result.toFixed(0)))
+// // console.log(Number.parseInt(result));
+
+// const firstName = 'Yaroslav'
+// const lastName = 'Lukovetskyi';
+
+// const result2 = firstName + " " + lastName //канкатенация строк мы значения двухп переменных поместили в одну строку через пробле
+
+// console.log(result2)
+
+const firstName = ['Yaroslav','Rita'];
+const two = firstName.length - 1; //последний индекс
+const one = 0; //первый индекс
+const lastName = 'Lukovetskyi';
+
+// const result2 = firstName + ' ' + lastName; //канкатенация строк мы значения двухп переменных поместили в одну строку через пробле
+
+// console.log(result2);
+
+const index1 = Math.round(Math.random() * (two - one) + one); //генерим случайный индекс с первого до последнего
+
+const firstName1 = firstName[index1] + ' ' + lastName; //находим текущий цвет сшили две строки
+
+console.log(firstName1);
+
+// const colors = ['red', 'yellow', 'green', 'orange', 'blue']; //храним массив цветов
+// const max = colors.length -1 //последний индекс
+// const min = 0; //первый индекс
+
+
+// const index = Math.round(Math.random() * (max - min) + min) //генерим случайный индекс с первого до последнего
+
+// const color = colors[index] //находим текущий цвет
+
+// console.log(color)
+
+// document.body.style.backgroundColor = color //вешаем цвет на боди
+
+// let brand = prompt('')
+// const normalizedBrand = brand.toLowerCase()
+// console.log(normalizedBrand)
+
+
+
