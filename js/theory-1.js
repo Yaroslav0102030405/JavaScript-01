@@ -765,7 +765,7 @@ console.log(
 
 // console.log(result2)
 
-const firstName = ['Yaroslav','Rita'];
+const firstName = ['Yaroslav', 'Rita'];
 const two = firstName.length - 1; //последний индекс
 const one = 0; //первый индекс
 const lastName = 'Lukovetskyi';
@@ -784,7 +784,6 @@ console.log(firstName1);
 // const max = colors.length -1 //последний индекс
 // const min = 0; //первый индекс
 
-
 // const index = Math.round(Math.random() * (max - min) + min) //генерим случайный индекс с первого до последнего
 
 // const color = colors[index] //находим текущий цвет
@@ -797,5 +796,46 @@ console.log(firstName1);
 // const normalizedBrand = brand.toLowerCase()
 // console.log(normalizedBrand)
 
+// Приклад 1
+// Данні
+// const message1 = 'Ви рекрутер ?';
+// const message2 = 'Відкрит доступ до резюме кандидата';
+// const massage3 = 'Доступ тільки для рекрутерів. Вибичате за незручності';
 
+// Логика
+// const shouldRenew = confirm(message1);
 
+// if (shouldRenew === true) {
+//   console.log(alert(message2));
+// } else {
+//   console.log(alert(massage3));
+// }
+
+// Приклад 2
+// Данні
+// const massage4 = 'Оцените кандидатат от 0 до 10';
+// const massage5 = 'Погана відповідь';
+// const massage6 = 'Дякуємо за відповідь!';
+// const massage7 = 'Відмова відповідати - це найгірша оцінка';
+
+// Логика
+// const quantity = prompt(massage4);
+// console.log(quantity);
+
+// if (quantity === '') {
+//   console.log(alert(massage5));
+// } else if (quantity === null) {
+//   console.log(alert(massage7));
+// } else {
+//   console.log(alert(`Ваша оцінка ${quantity} ${massage6}`));
+// }
+
+const elementWidth = '50px';
+
+const newElement = Number.parseInt(elementWidth);
+console.log(newElement);
+
+let elementHeight = '200.05px';
+
+elementHeight = Number.parseFloat(elementHeight);
+console.log(elementHeight);
