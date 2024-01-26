@@ -830,12 +830,33 @@ console.log(firstName1);
 //   console.log(alert(`Ваша оцінка ${quantity} ${massage6}`));
 // }
 
-const elementWidth = '50px';
+// const elementWidth = '50px';
 
-const newElement = Number.parseInt(elementWidth);
-console.log(newElement);
+// const newElement = Number.parseInt(elementWidth);
+// console.log(newElement);
 
-let elementHeight = '200.05px';
+// let elementHeight = '200.05px';
 
-elementHeight = Number.parseFloat(elementHeight);
-console.log(elementHeight);
+// elementHeight = Number.parseFloat(elementHeight);
+// console.log(elementHeight);
+
+// Приклад 3
+// let base = prompt('Число');
+// base = Number(base);
+
+// let power = prompt('Степень');
+// power = Number(power);
+
+// const result = base * power;
+
+// console.log(alert(`${base} * ${power} = ${result}`));
+
+// const min1 = 10;
+// const max1 = 50;
+
+// const result = Math.round(Math.random() * (max1 - min1) + min1);
+// console.log(result);
+
+const title = document.querySelector('h1');
+
+title.textContent = 'Привет!';
