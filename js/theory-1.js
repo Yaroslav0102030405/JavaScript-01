@@ -860,3 +860,37 @@ console.log(firstName1);
 const title = document.querySelector('h1');
 
 title.textContent = 'Привет!';
+
+const age = '20px';
+const totoalPrice = '200.74px';
+const userNames = 'Yaroslav';
+const isOpen = true;
+const nulls = null;
+let start;
+
+console.log(Number.parseInt(age));
+console.log(Number.parseFloat(totoalPrice));
+console.log(typeof userNames);
+console.log(typeof isOpen);
+console.log(typeof nulls);
+console.log(typeof start);
+
+const salary = 120000.2234455;
+
+console.log(Number(salary.toFixed(3)));
+
+function fff(number) {
+  return Number(number.toFixed(2));
+}
+
+console.log(fff(11.233444));
+console.log(fff(22.234566));
+console.log(fff(33.234566));
+console.log(fff(44.234566));
+console.log(fff(55.234566));
+
+const onFff = numbers => {
+  return Number(numbers.toFixed(2));
+};
+
+console.log(onFff(11.23345445));
