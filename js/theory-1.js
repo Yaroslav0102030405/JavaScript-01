@@ -894,3 +894,21 @@ const onFff = numbers => {
 };
 
 console.log(onFff(11.23345445));
+const room = 717;
+const type = 'VIP';
+
+const welcomeMessage = `Гость с номеру ${room} поселяеться в ${type}`;
+console.log(welcomeMessage);
+
+let brand = 'samsung';
+
+console.log(brand.slice(1).toUpperCase());
+console.log(brand);
+
+brand = brand[0] + brand.slice(1).toUpperCase();
+
+console.log(brand);
+
+console.log(0 && 6 && 7 && 'hello');
+
+console.log(0 || 6 || 7);
